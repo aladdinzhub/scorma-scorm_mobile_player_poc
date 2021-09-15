@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jrn-kh-4eM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WebView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="WebView" storyboardIdentifier="WebView" title="WebView" id="BYZ-38-t0r" customClass="WebViewController" customModule="ScormTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FWb-rm-3pX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="-153"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JIs-0s-xYy">
+            <objects>
+                <navigationController id="jrn-kh-4eM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NT7-WT-EZW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PGw-Kr-Gj7" kind="relationship" relationship="rootViewController" id="6Tl-gU-0wg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxU-fZ-ShE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-529" y="-153"/>
+        </scene>
+        <!--Web View List Controller-->
+        <scene sceneID="RQn-y2-5eq">
+            <objects>
+                <viewController id="v9G-iL-0a0" customClass="WebViewListController" customModule="ScormTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KZu-te-M9e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u6-eE-W2R">
+                                <rect key="frame" x="146.5" y="433" width="121" height="30"/>
+                                <state key="normal" title="Go to Simple Golf"/>
+                                <connections>
+                                    <action selector="goToSimpleGolf:" destination="v9G-iL-0a0" eventType="touchUpInside" id="NdT-cr-fnI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBG-b6-ETg">
+                                <rect key="frame" x="136" y="474" width="142" height="30"/>
+                                <state key="normal" title="Go To Golf with Alert"/>
+                                <connections>
+                                    <action selector="goToGolfWithAlert:" destination="v9G-iL-0a0" eventType="touchUpInside" id="CFl-Ph-ita"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcF-gx-4Un">
+                                <rect key="frame" x="176.5" y="516" width="61" height="30"/>
+                                <state key="normal" title="Go to BV"/>
+                                <connections>
+                                    <action selector="goToBv:" destination="v9G-iL-0a0" eventType="touchUpInside" id="jm8-Lw-tng"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97d-j9-nVO">
+                                <rect key="frame" x="109" y="564" width="196" height="30"/>
+                                <state key="normal" title="Go to BV opened on Chrome"/>
+                                <connections>
+                                    <action selector="goToBvOpenedOnChrome:" destination="v9G-iL-0a0" eventType="touchUpInside" id="z2G-3o-T2S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZPb-tA-bUq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4u6-eE-W2R" firstAttribute="centerX" secondItem="KZu-te-M9e" secondAttribute="centerX" id="L49-pg-qDN"/>
+                            <constraint firstItem="4u6-eE-W2R" firstAttribute="centerY" secondItem="KZu-te-M9e" secondAttribute="centerY" id="UZy-gq-0bd"/>
+                            <constraint firstItem="LcF-gx-4Un" firstAttribute="centerX" secondItem="KZu-te-M9e" secondAttribute="centerX" id="VFc-qi-TYb"/>
+                            <constraint firstItem="97d-j9-nVO" firstAttribute="centerY" secondItem="KZu-te-M9e" secondAttribute="centerY" constant="131" id="a5R-hK-0kx"/>
+                            <constraint firstItem="97d-j9-nVO" firstAttribute="centerX" secondItem="KZu-te-M9e" secondAttribute="centerX" id="ccJ-qQ-ytS"/>
+                            <constraint firstItem="LcF-gx-4Un" firstAttribute="centerY" secondItem="KZu-te-M9e" secondAttribute="centerY" constant="83" id="h0k-3s-hsD"/>
+                            <constraint firstItem="cBG-b6-ETg" firstAttribute="centerY" secondItem="KZu-te-M9e" secondAttribute="centerY" constant="41" id="l5Y-6C-rqL"/>
+                            <constraint firstItem="cBG-b6-ETg" firstAttribute="centerX" secondItem="KZu-te-M9e" secondAttribute="centerX" id="mVV-9z-fYa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v4u-Da-oXM"/>
+                    <connections>
+                        <outlet property="bvButton" destination="LcF-gx-4Un" id="8ws-ak-iER"/>
+                        <outlet property="bvOpenedOnChrome" destination="97d-j9-nVO" id="1en-G5-wKU"/>
+                        <outlet property="golfWithAlertButton" destination="cBG-b6-ETg" id="4Mb-Qh-PfB"/>
+                        <outlet property="simpleGolfButton" destination="4u6-eE-W2R" id="TPC-eE-F3t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDw-5o-79l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="-153"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ds4-wu-gRS">
+            <objects>
+                <viewController id="PGw-Kr-Gj7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wnh-S1-kwT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzX-Zx-1Uk">
+                                <rect key="frame" x="154.5" y="433" width="105" height="30"/>
+                                <state key="normal" title="Go to WebView"/>
+                                <connections>
+                                    <segue destination="v9G-iL-0a0" kind="show" id="YdV-7T-XAp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR4-6u-dwS">
+                                <rect key="frame" x="166.5" y="472" width="81" height="30"/>
+                                <state key="normal" title="Go to Safari"/>
+                                <connections>
+                                    <segue destination="t2I-zV-FWy" kind="show" id="f9L-F2-YCH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R1D-EC-tBO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cR4-6u-dwS" firstAttribute="centerX" secondItem="Wnh-S1-kwT" secondAttribute="centerX" id="4Ov-EJ-UOM"/>
+                            <constraint firstItem="CzX-Zx-1Uk" firstAttribute="centerY" secondItem="Wnh-S1-kwT" secondAttribute="centerY" id="pXN-0O-GwS"/>
+                            <constraint firstItem="cR4-6u-dwS" firstAttribute="centerY" secondItem="Wnh-S1-kwT" secondAttribute="centerY" constant="39" id="rcM-5J-lvD"/>
+                            <constraint firstItem="CzX-Zx-1Uk" firstAttribute="centerX" secondItem="Wnh-S1-kwT" secondAttribute="centerX" id="sbW-Be-0fe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uwo-2P-rmK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JA6-qh-l7u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-530" y="585"/>
+        </scene>
+        <!--Safari List Controller-->
+        <scene sceneID="tbT-0w-YeN">
+            <objects>
+                <viewController id="t2I-zV-FWy" customClass="SafariListController" customModule="ScormTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tGg-U2-B0h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RK0-RQ-k8W">
+                                <rect key="frame" x="145.5" y="433" width="123" height="30"/>
+                                <state key="normal" title="Go To Simple Golf"/>
+                                <connections>
+                                    <action selector="goToSimpleGolf:" destination="t2I-zV-FWy" eventType="touchUpInside" id="KYp-KZ-4eP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dej-ro-dAP">
+                                <rect key="frame" x="16" y="479" width="382" height="30"/>
+                                <state key="normal" title="Go To Golf with Alert"/>
+                                <connections>
+                                    <action selector="goToGolfWithAlert:" destination="t2I-zV-FWy" eventType="touchUpInside" id="zCQ-Ga-Ooh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9G-8w-UBZ">
+                                <rect key="frame" x="16" y="525" width="382" height="30"/>
+                                <state key="normal" title="Go to BV"/>
+                                <connections>
+                                    <action selector="goToBV:" destination="t2I-zV-FWy" eventType="touchUpInside" id="DbG-Ut-ggD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jF-w6-jRN">
+                                <rect key="frame" x="109" y="571" width="196" height="30"/>
+                                <state key="normal" title="Go to BV opened on Chrome"/>
+                                <connections>
+                                    <action selector="goToBVOpenedOnChrome:" destination="t2I-zV-FWy" eventType="touchUpInside" id="c9f-ps-tKN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kXp-fW-OKZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RK0-RQ-k8W" firstAttribute="centerX" secondItem="tGg-U2-B0h" secondAttribute="centerX" id="2l2-Jt-SHq"/>
+                            <constraint firstItem="RK0-RQ-k8W" firstAttribute="centerY" secondItem="tGg-U2-B0h" secondAttribute="centerY" id="Du0-Mw-1cI"/>
+                            <constraint firstItem="kXp-fW-OKZ" firstAttribute="trailing" secondItem="a9G-8w-UBZ" secondAttribute="trailing" constant="16" id="DvJ-vW-DcB"/>
+                            <constraint firstItem="8jF-w6-jRN" firstAttribute="centerX" secondItem="RK0-RQ-k8W" secondAttribute="centerX" id="FfC-XD-Izb"/>
+                            <constraint firstItem="a9G-8w-UBZ" firstAttribute="top" secondItem="dej-ro-dAP" secondAttribute="bottom" constant="16" id="Gb6-df-Om5"/>
+                            <constraint firstItem="kXp-fW-OKZ" firstAttribute="trailing" secondItem="dej-ro-dAP" secondAttribute="trailing" constant="16" id="Kv9-hk-0Xt"/>
+                            <constraint firstItem="dej-ro-dAP" firstAttribute="top" secondItem="RK0-RQ-k8W" secondAttribute="bottom" constant="16" id="Rcn-HT-MZm"/>
+                            <constraint firstItem="kXp-fW-OKZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dej-ro-dAP" secondAttribute="trailing" id="gW1-t1-yDX"/>
+                            <constraint firstItem="dej-ro-dAP" firstAttribute="leading" secondItem="kXp-fW-OKZ" secondAttribute="leading" constant="16" id="hmB-h6-6FW"/>
+                            <constraint firstItem="a9G-8w-UBZ" firstAttribute="leading" secondItem="kXp-fW-OKZ" secondAttribute="leading" constant="16" id="tg7-Ua-2cl"/>
+                            <constraint firstItem="kXp-fW-OKZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="a9G-8w-UBZ" secondAttribute="trailing" id="vil-5K-WR5"/>
+                            <constraint firstItem="8jF-w6-jRN" firstAttribute="top" secondItem="a9G-8w-UBZ" secondAttribute="bottom" constant="16" id="yeV-6m-GDZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RY6-CP-RCO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xx2-TF-Mg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.57971014492756" y="598.66071428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
