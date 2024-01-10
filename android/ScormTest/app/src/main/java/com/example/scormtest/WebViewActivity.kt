@@ -16,6 +16,7 @@ class WebViewActivity : AppCompatActivity() {
 
         toolbarSetUp()
         val url = intent.getStringExtra("url")
+        println("url:"+url.toString())
         webViewSetUp(url)
     }
 

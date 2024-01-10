@@ -5,6 +5,7 @@ plugins {
 
 android {
     compileSdk 31
+    //buildToolsVersion "30.0.0"
 
     defaultConfig {
         applicationId "com.example.scormtest"
@@ -29,6 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildToolsVersion '30.0.2'
 }
 
 dependencies {
