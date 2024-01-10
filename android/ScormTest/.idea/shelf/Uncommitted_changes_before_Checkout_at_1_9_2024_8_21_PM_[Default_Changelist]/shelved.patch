@@ -1,0 +1,77 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"app/src/main/res/layout/activity_custom_chrome_tab.xml\" value=\"0.2504528985507246\" />\r\n        <entry key=\"app/src/main/res/layout/activity_main.xml\" value=\"0.28229166666666666\" />\r\n        <entry key=\"app/src/main/res/layout/activity_web_view.xml\" value=\"0.1\" />\r\n        <entry key=\"app/src/main/res/layout/activity_web_view_list.xml\" value=\"0.28229166666666666\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 70f4a5b5bc86aa38f5f22f10d101bc767a5a376e)
++++ b/.idea/misc.xml	(date 1704811881718)
+@@ -10,7 +10,7 @@
+       </map>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AndroidLayouts\">\r\n    <shared>\r\n      <config />\r\n    </shared>\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"NONE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"c06d2889-e0cb-4ff9-9eba-198a7d657ead\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"device_and_snapshot_combo_box_target[/Users/germano/.android/avd/Pixel_3a_API_31_arm64-v8a.avd]\" />\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"navigationResourceFile\" />\r\n        <option value=\"Kotlin Class\" />\r\n        <option value=\"layoutResourceFile\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\r\n  </component>\r\n  <component name=\"InvalidFacetManager\">\r\n    <ignored-facets>\r\n      <facet id=\"Scorm_Test.app/invalid/Kotlin\" />\r\n    </ignored-facets>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1y5WADnXHerlFebhVv253gSmBT4\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"dart.analysis.tool.window.visible\" value=\"false\" />\r\n    <property name=\"memory.settings.postsync.last.time.stamp\" value=\"1631542142056\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\r\n    <property name=\"show.migrate.to.gradle.popup\" value=\"false\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"android.template.-2011832096\">\r\n      <recent name=\"com.example.scormtest\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"app\" type=\"AndroidRunConfigurationType\" factoryName=\"Android App\" activateToolWindowBeforeRun=\"false\">\r\n      <module name=\"Scorm_Test.app\" />\r\n      <option name=\"DEPLOY\" value=\"true\" />\r\n      <option name=\"DEPLOY_APK_FROM_BUNDLE\" value=\"false\" />\r\n      <option name=\"DEPLOY_AS_INSTANT\" value=\"false\" />\r\n      <option name=\"ARTIFACT_NAME\" value=\"\" />\r\n      <option name=\"PM_INSTALL_OPTIONS\" value=\"\" />\r\n      <option name=\"ALL_USERS\" value=\"false\" />\r\n      <option name=\"ALWAYS_INSTALL_WITH_PM\" value=\"false\" />\r\n      <option name=\"DYNAMIC_FEATURES_DISABLED_LIST\" value=\"\" />\r\n      <option name=\"ACTIVITY_EXTRA_FLAGS\" value=\"\" />\r\n      <option name=\"MODE\" value=\"default_activity\" />\r\n      <option name=\"CLEAR_LOGCAT\" value=\"false\" />\r\n      <option name=\"SHOW_LOGCAT_AUTOMATICALLY\" value=\"false\" />\r\n      <option name=\"SKIP_NOOP_APK_INSTALLATIONS\" value=\"true\" />\r\n      <option name=\"FORCE_STOP_RUNNING_APP\" value=\"true\" />\r\n      <option name=\"TARGET_SELECTION_MODE\" value=\"DEVICE_AND_SNAPSHOT_COMBO_BOX\" />\r\n      <option name=\"SELECTED_CLOUD_MATRIX_CONFIGURATION_ID\" value=\"-1\" />\r\n      <option name=\"SELECTED_CLOUD_MATRIX_PROJECT_ID\" value=\"\" />\r\n      <option name=\"DEBUGGER_TYPE\" value=\"Auto\" />\r\n      <Auto>\r\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\r\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\r\n        <option name=\"WORKING_DIR\" value=\"\" />\r\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\r\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\r\n      </Auto>\r\n      <Hybrid>\r\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\r\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\r\n        <option name=\"WORKING_DIR\" value=\"\" />\r\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\r\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\r\n      </Hybrid>\r\n      <Java />\r\n      <Native>\r\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\r\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\r\n        <option name=\"WORKING_DIR\" value=\"\" />\r\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\r\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\r\n      </Native>\r\n      <Profilers>\r\n        <option name=\"ADVANCED_PROFILING_ENABLED\" value=\"false\" />\r\n        <option name=\"STARTUP_PROFILING_ENABLED\" value=\"false\" />\r\n        <option name=\"STARTUP_CPU_PROFILING_ENABLED\" value=\"false\" />\r\n        <option name=\"STARTUP_CPU_PROFILING_CONFIGURATION_NAME\" value=\"Sample Java Methods\" />\r\n        <option name=\"STARTUP_NATIVE_MEMORY_PROFILING_ENABLED\" value=\"false\" />\r\n        <option name=\"NATIVE_MEMORY_SAMPLE_RATE_BYTES\" value=\"2048\" />\r\n      </Profilers>\r\n      <option name=\"DEEP_LINK\" value=\"\" />\r\n      <option name=\"ACTIVITY_CLASS\" value=\"\" />\r\n      <option name=\"SEARCH_ACTIVITY_IN_GLOBAL_SCOPE\" value=\"false\" />\r\n      <option name=\"SKIP_ACTIVITY_VALIDATION\" value=\"false\" />\r\n      <method v=\"2\">\r\n        <option name=\"Android.Gradle.BeforeRunTask\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"c06d2889-e0cb-4ff9-9eba-198a7d657ead\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1631541787823</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1631541787823</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 70f4a5b5bc86aa38f5f22f10d101bc767a5a376e)
++++ b/.idea/workspace.xml	(date 1704811881711)
+@@ -67,13 +67,12 @@
+       <option name="PM_INSTALL_OPTIONS" value="" />
+       <option name="ALL_USERS" value="false" />
+       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
++      <option name="CLEAR_APP_STORAGE" value="false" />
+       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+       <option name="MODE" value="default_activity" />
+       <option name="CLEAR_LOGCAT" value="false" />
+       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
++      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+@@ -84,6 +83,8 @@
+         <option name="WORKING_DIR" value="" />
+         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
++        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
++        <option name="DEBUG_SANDBOX_SDK" value="false" />
+       </Auto>
+       <Hybrid>
+         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+@@ -91,14 +92,21 @@
+         <option name="WORKING_DIR" value="" />
+         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
++        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
++        <option name="DEBUG_SANDBOX_SDK" value="false" />
+       </Hybrid>
+-      <Java />
++      <Java>
++        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
++        <option name="DEBUG_SANDBOX_SDK" value="false" />
++      </Java>
+       <Native>
+         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+         <option name="SHOW_STATIC_VARS" value="true" />
+         <option name="WORKING_DIR" value="" />
+         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
++        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
++        <option name="DEBUG_SANDBOX_SDK" value="false" />
+       </Native>
+       <Profilers>
+         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
