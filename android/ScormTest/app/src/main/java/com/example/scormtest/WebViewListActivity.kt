@@ -59,6 +59,8 @@ class WebViewListActivity : AppCompatActivity() {
     private fun loadWebView(url: String) {
         val intent = Intent(this@WebViewListActivity, WebViewActivity::class.java)
         intent.putExtra("url", url)
+        println("loadWebView url:"+url)
+
         startActivity(intent)
     }
 }
