@@ -58,12 +58,12 @@ class MainActivity : AppCompatActivity() {
 
 
         // Get the application's directory in internal storage
-        val appDirectory = File(getExternalFilesDir(null), "com.example.scormtest")
+        val appDirectory = File(getExternalFilesDir(null), "")
 
         // Specify the file name and path within the app's directory
 
         // Specify the file name and path within the app's directory
-        val fileName = "example.txt"
+        val fileName = "example3.txt"
         val letDirectory = File(appDirectory, "LET")
         letDirectory.mkdirs()
 
@@ -74,8 +74,8 @@ class MainActivity : AppCompatActivity() {
         try {
             // Create the file
 
-            // Write to the file
-            FileOutputStream(file).use { it.write("record goes here".toByteArray()) }
+//            // Write to the file
+//            FileOutputStream(file).use { it.write("record goes here".toByteArray()) }
 //        // Read from the file
 //        val inputAsString = FileInputStream(file).bufferedReader().use { it.readText() }
 
@@ -83,13 +83,14 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//            if (file.createNewFile()) {
-//                // File creation successful
-//                Log.d("FileCreation", "File created successfully: " + file.absolutePath)
-//            } else {
-//                // File already exists
-//                Log.d("FileCreation", "File already exists: " + file.absolutePath)
-//            }
+            if (file.createNewFile()) {
+                // File creation successful
+                FileOutputStream(file).use { it.write("test3 : record goes here ".toByteArray()) }
+                Log.d("FileCreation", "File created successfully: " + file.absolutePath)
+            } else {
+                // File already exists
+                Log.d("FileCreation", "File already exists: " + file.absolutePath)
+            }
 
 
 

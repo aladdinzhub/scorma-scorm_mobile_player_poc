@@ -35,6 +35,9 @@ class WebViewActivity : AppCompatActivity() {
         val webView = findViewById<WebView>(R.id.web_view)
         webView.webViewClient = WebViewClient()
         webView.loadUrl(url ?: ScormList.SIMPLE_GOLF)
+        //webView.getSettings().setAllowFileAccess(true);
+        webView.settings.allowFileAccess = true
+        webView.settings.allowFileAccessFromFileURLs =true
         webView.settings.javaScriptEnabled = true
         webView.settings.setSupportZoom(true)
     }
