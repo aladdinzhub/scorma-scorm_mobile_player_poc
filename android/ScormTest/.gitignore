@@ -12,6 +12,9 @@ com_crashlytics_export_strings.xml
 # Local configuration file (sdk path, etc)
 local.properties
 
+# Gradle generated files
+.gradle/
+
 # Signing files
 .signing/
 
@@ -57,7 +60,7 @@ Thumbs.db
 # Files for the ART/Dalvik VM
 *.dex
 
-# Java class files.idea/gradle.xml
+# Java class files
 *.class
 
 # Generated files
@@ -89,7 +92,7 @@ captures/
 *.iml
 .idea/workspace.xml
 .idea/tasks.xml
-### .idea/gradle.xml
+.idea/gradle.xml
 .idea/assetWizardSettings.xml
 .idea/dictionaries
 .idea/libraries
@@ -254,8 +257,8 @@ fabric.properties
 .idea/**/dbnavigator.xml
 
 # Gradle
-### .idea/**/gradle.xml
-### .idea/**/libraries
+.idea/**/gradle.xml
+.idea/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
