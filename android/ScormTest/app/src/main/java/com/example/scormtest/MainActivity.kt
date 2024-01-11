@@ -2,10 +2,16 @@ package com.example.scormtest
 
 import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import java.io.File
+import java.io.FileInputStream
+import java.io.FileOutputStream
+import java.io.IOException
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        createFile()
         toolbarSetUp()
     }
 
@@ -46,4 +53,52 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this@MainActivity, ChromeCustomTabActivity::class.java)
         startActivity(intent)
     }
+
+    private fun createFile(){
+
+
+        // Get the application's directory in internal storage
+        val appDirectory = File(getExternalFilesDir(null), "com.example.scormtest")
+
+        // Specify the file name and path within the app's directory
+
+        // Specify the file name and path within the app's directory
+        val fileName = "example.txt"
+        val letDirectory = File(appDirectory, "LET")
+        letDirectory.mkdirs()
+
+        val file = File(letDirectory, fileName)
+
+
+
+        try {
+            // Create the file
+
+            // Write to the file
+            FileOutputStream(file).use { it.write("record goes here".toByteArray()) }
+//        // Read from the file
+//        val inputAsString = FileInputStream(file).bufferedReader().use { it.readText() }
+
+
+
+
+
+//            if (file.createNewFile()) {
+//                // File creation successful
+//                Log.d("FileCreation", "File created successfully: " + file.absolutePath)
+//            } else {
+//                // File already exists
+//                Log.d("FileCreation", "File already exists: " + file.absolutePath)
+//            }
+
+
+
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+
+
+    }
+
+
 }
