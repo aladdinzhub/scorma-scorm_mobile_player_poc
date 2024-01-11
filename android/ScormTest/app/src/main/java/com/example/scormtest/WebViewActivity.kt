@@ -7,6 +7,11 @@ import android.os.Bundle
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.widget.Toolbar
+import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import java.io.FileOutputStream
+
 
 class WebViewActivity : AppCompatActivity() {
 
@@ -45,4 +50,19 @@ class WebViewActivity : AppCompatActivity() {
             it.setDisplayShowHomeEnabled(true)
         }
     }
+
+    private fun getFilesDirPath(): String {
+        return filesDir.path + "/"
+    }
+    fun loadFile(filePath: String): File {
+        val file = File(getFilesDirPath(), filePath)
+        if (!file.exists()) {
+            throw FileNotFoundException("File not found: $file")
+        }
+        return file
+    }
+
+
+
+
 }

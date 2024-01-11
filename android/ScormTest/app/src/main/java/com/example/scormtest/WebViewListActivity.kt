@@ -7,6 +7,17 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.widget.Toolbar
 
+
+import java.io.File
+import java.io.FileInputStream
+import java.io.FileNotFoundException
+import java.io.FileOutputStream
+
+import android.content.Context
+
+
+
+
 class WebViewListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,7 +71,38 @@ class WebViewListActivity : AppCompatActivity() {
         val intent = Intent(this@WebViewListActivity, WebViewActivity::class.java)
         intent.putExtra("url", url)
         println("loadWebView url:"+url)
-
+        createFile()
         startActivity(intent)
     }
+
+
+
+    private fun createFile(){
+
+        // Get the internal storage directory
+        val path = this@WebViewListActivity.getFilesDir()
+
+// Create a new directory within the internal storage directory
+        val letDirectory = File(path, "LET")
+        letDirectory.mkdirs()
+
+// Create a new file within the LET directory
+        val file = File(letDirectory, "Records.txt")
+
+        println("file : "+file.absolutePath )
+
+// Write to the file
+        FileOutputStream(file).use { it.write("record goes here".toByteArray()) }
+
+// Read from the file
+        val inputAsString = FileInputStream(file).bufferedReader().use { it.readText() }
+
+
+
+    }
+
+
+
+
+
 }
