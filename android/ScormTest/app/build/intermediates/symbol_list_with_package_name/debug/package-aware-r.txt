@@ -1819,6 +1819,8 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn_creat_file
+id btn_create_file
 id buttonPanel
 id bv_btn
 id bv_opened_on_chrome_btn
@@ -2356,6 +2358,7 @@ string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string go_to_chrome_custom_tab
+string go_to_create_file
 string go_to_webview
 string golf_with_alert
 string hide_bottom_view_on_scroll_behavior

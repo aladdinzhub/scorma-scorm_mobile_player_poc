@@ -1074,6 +1074,7 @@
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
     <string name="go_to_chrome_custom_tab">Go to Chrome Custom Tab</string>
+    <string name="go_to_create_file">Create a File</string>
     <string name="go_to_webview">Go to WebView</string>
     <string name="golf_with_alert">Golf with alert</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
