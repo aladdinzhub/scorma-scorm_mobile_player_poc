@@ -1,2 +1,0 @@
-com/example/scormtest/BuildConfig.java
- com.example.scormtest.BuildConfig
